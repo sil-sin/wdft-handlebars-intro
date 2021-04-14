@@ -1,0 +1,8 @@
+<div>Hello Mr/Mrs. {{lastName}}, you're in landing page</div>
+    {{!-- when using dynamic always use 2 "/{/{/}/}/ "--}}
+   <div>Your age is {{age}}</div>
+  <h1> Students</h1>
+  {{#each students}}
+  {{!-- loop of array in hbs files --}}
+   {{> info this}}
+  {{/each}}
